@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_projectx_DomCI" object="${domci}" path="/domcis" z="yLxZCNqODvrEGY/h0DQh017AnrM=">
+        <field:display field="name" id="s_com_projectx_DomCI_Name" object="${domci}" z="uxIah9Lpc/vkjMAnrtLMEqBwU44="/>
+        <field:display field="id" id="s_com_projectx_DomCI_id" object="${domci}" z="iHLIuvCPEZ0FaTFX/7+Nt1CWc8s="/>
+        <field:display field="className" id="s_com_projectx_DomCI_className" object="${domci}" z="3r2N6ihZemwOiD4KRNYscd7tnpU="/>
+        <field:display field="requestedViews" id="s_com_projectx_DomCI_requestedViews" object="${domci}" z="2bGelJQumMNPzPhpeFudKj4si+c="/>
+        <field:display field="version" id="s_com_projectx_DomCI_version" object="${domci}" z="Jhaf05Hr8VRRFEUS5Jbc/9mz5/o="/>
+        <field:display field="viewCIs" id="s_com_projectx_DomCI_viewCIs" object="${domci}" z="ERN5MLzDpndADX97stGP5TxS0xc="/>
+    </page:show>
+</div>

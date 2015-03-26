@@ -1,0 +1,10 @@
+# idea Intellij excludes
+.idea/
+*.iml
+target/
+/out/
+
+
+# Other
+*~
+

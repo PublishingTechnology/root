@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_projectx_DomCI" items="${domcis}" z="1yP7P+nQWDiFW+KkqfGfk1YOIqY=">
+        <table:table data="${domcis}" id="l_com_projectx_DomCI" path="/domcis" typeIdFieldName="id_" z="OvbLy3ZudTtKZF2wzJ/gsyTZ/dY=">
+            <table:column id="c_com_projectx_DomCI_Name" property="name" z="eKB0T0ndvsbGNJ1NZi7/3YYa/JE="/>
+            <table:column id="c_com_projectx_DomCI_id" property="id" z="SMVceE6NTHoptYzRgTKLmFnfGE0="/>
+            <table:column id="c_com_projectx_DomCI_className" property="className" z="+VHY9eh3fwWC3Qv0eqoXfGba6Lk="/>
+            <table:column id="c_com_projectx_DomCI_requestedViews" property="requestedViews" z="YTCekT34VVdJ5eDShyj4V6Gc/tg="/>
+            <table:column id="c_com_projectx_DomCI_version" property="version" z="cKbuw5qrEwv2fuc5ncr14uC1JGo="/>
+            <table:column id="c_com_projectx_DomCI_viewCIs" property="viewCIs" z="i82VUsOlyGvW1A3KL+v1st5Uoc8="/>
+        </table:table>
+    </page:list>
+</div>

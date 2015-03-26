@@ -1,0 +1,8 @@
+<zk>
+	<window apply="org.zkoss.bind.BindComposer"
+		viewModel="@id('vm')@init('com.projectx.testapp.MyViewModel')"
+		validationMessages="@id('vmsgs')">
+		<hlayout>ViewCI names: <label value="@load(vm.latestViewName)" /></hlayout>
+		<button label="next" onClick="@command('cmd')"/>
+	</window>
+</zk>
