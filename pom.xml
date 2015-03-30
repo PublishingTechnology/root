@@ -17,6 +17,7 @@
   <modules>
         <module>content-srvc</module>
         <module>admin-gui</module>
+        <module>admin-gui-angularJS</module>
   </modules>
 
   <build>

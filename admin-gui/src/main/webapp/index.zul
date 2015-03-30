@@ -1,8 +1,16 @@
 <zk>
-	<window apply="org.zkoss.bind.BindComposer"
+	<style>
+    	.mylabel {
+        color: red;
+    	}
+    	.border {
+    		border: 3px solid red;
+    	}
+    </style>
+	<window sclass="border" apply="org.zkoss.bind.BindComposer"
 		viewModel="@id('vm')@init('com.projectx.testapp.MyViewModel')"
 		validationMessages="@id('vmsgs')">
-		<hlayout>ViewCI names: <label value="@load(vm.latestViewName)" /></hlayout>
+		<hlayout>ViewCI names: <label sclass="mylabel" style="border:3spx solid red" value="@load(vm.latestViewName)" /></hlayout>
 		<button label="next" onClick="@command('cmd')"/>
 	</window>
 </zk>
