@@ -8,4 +8,7 @@ target/
 # Other
 *~
 
-/.settings/
+# Eclipse
+.settings/
+.project
+build/
