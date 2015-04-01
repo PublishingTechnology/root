@@ -1,0 +1,74 @@
+<html t:type="layout" title="admin-gui-tapestry Index"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+        <!-- Most of the page content, including <head>, <body>, etc. tags, comes from Layout.tml -->
+
+    <p>${message:greeting}</p>
+
+    <p>The current time is: <strong>${currentTime}</strong></p>
+
+
+        <p>
+        
+        <style>
+#viewsAdminCont
+{
+  width: 100%;
+  height: 60px;
+  border: 1px solid Green;
+  padding: 3px;
+}
+#selectViewCont
+{
+  width: 300px;
+  height: 60px;
+  background-color: #E0E0E0;
+  margin-right: 5px;
+  overflow-y: auto;
+  float: left;
+}
+#viewDetailsCont
+{
+  height: 300px;
+  padding: 0;
+  display: block;
+  overflow-y: auto;
+}
+</style>
+
+<t:zone id="viewForm" t:id="viewForm">
+<div id="viewsAdminCont" >
+<div id="selectViewCont">
+<t:form t:id="loadViewForm" t:type="form" t:zone="^" novalidate="true">
+<t:errors/>
+<t:textfield t:id="reqViewId" />
+<input type="submit" value="Load View"/>
+</t:form>
+</div>
+
+<div id="viewDetailsCont">
+<span id="viewNameLab">View Name: ${viewNameOut} </span><br/>
+<span id="viewIdLab">View ID: ${viewIdOut}</span>
+</div>
+</div>
+</t:zone>
+
+       
+        </p>
+
+
+    <p:sidebar>
+        <p>
+            You are running Tapestry version <strong>${tapestryVersion}</strong>.
+        </p>
+
+
+        <p>
+            [
+            <t:pagelink page="Index">refresh page</t:pagelink>
+            ]
+        </p>
+    </p:sidebar>
+
+</html>

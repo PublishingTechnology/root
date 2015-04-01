@@ -2,13 +2,16 @@
 .idea/
 *.iml
 target/
-/out/
+out/
 
 
 # Other
 *~
 
 # Eclipse
+.settings
 .settings/
 .project
+.classpath
+.tern-project
 build/
